@@ -6,10 +6,9 @@ from typing import (
     TypedDict, Literal, Callable, Mapping, NewType
 )
 from datetime import datetime
-import asyncio
 from enum import Enum
 from pathlib import Path
-from cryptography.hazmat.primitives.asymmetric import ed25519
+import libipld
 from multiformats import CID, multicodec, multihash, multibase
 
 # Type variables
@@ -225,6 +224,8 @@ class ConnectionOptions:
     """Options for UCAN connections"""
     id: Principal
     codec: OutboundCodec
+    # TODO link ucan to this.
+    hasher: Any
     channel: Any  # Transport channel
 
 class PrincipalParser(Protocol):

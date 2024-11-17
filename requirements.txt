@@ -1,2 +1,3 @@
 multiformats[full]
-libpild
+dag-cbor
+dag-json
