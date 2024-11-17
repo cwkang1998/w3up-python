@@ -1,3 +1,5 @@
 # w3up python client
 
-Because I can.
+> Incomplete.
+
+A client for w3up.
